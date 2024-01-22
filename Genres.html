@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genres</title>
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #000;
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #ffcc00;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: #ffcc00;
+        }
+
+        .genre-box {
+            background-color: #333;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .genre-box:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #ffcc00;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Genres</h1>
+    </header>
+
+    <section>
+        <!-- Genres boxes -->
+        <div class="genre-box" onclick="navigateTo('Action.html')">Action</div>
+        <div class="genre-box" onclick="navigateTo('Horror.html')">Horror</div>
+        <div class="genre-box" onclick="navigateTo('RPG.html')">RPG</div>
+        <div class="genre-box" onclick="navigateTo('Multiplayer.html')">Multiplayer</div>
+    </section>
+
+    <footer>
+        &copy; 2024 Game On. All rights reserved.
+    </footer>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+
+</html>
